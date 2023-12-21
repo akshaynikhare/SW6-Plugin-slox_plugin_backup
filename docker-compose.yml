@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+
+    shopware:
+      # use either tag "latest" or any other version like "6.1.5", ...
+      image: dockware/dev:latest
+
+      container_name: slox_plugin_backup
+      ports:
+         - "80:80"
+      volumes:
+         - ./slox_plugin_backup:/var/www/html/custom/plugins/slox_plugin_backup
+      networks:
+         - web
+
+
+volumes:
+  db_volume:
+    driver: local
+  shop_volume:
+    driver: local
+
+networks:
+  web:
+    external: false
