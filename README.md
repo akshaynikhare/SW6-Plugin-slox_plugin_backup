@@ -4,11 +4,11 @@ Shopware 6 Plugin for Backing Up Custom Plugins Folder
 
 ## Description
 
-The `slox_plugin_backup` is a Shopware 6 plugin designed to simplify the backup process of the `/custom/plugins` folder. Upon activation and installation of the plugin, users can trigger a backup by accessing the following URL: `<your-site-domin>/slox-backup`.
+The `slox_plugin_backup` is a Shopware 6 plugin designed to simplify the backup process of the `<your-site-root>/custom/plugins` folder. Upon activation and installation of the plugin, users can trigger a backup by accessing the following URL: `<your-site-domin>/slox-backup`.
 
 ## Features
 
-- **Backup:** Creates a compressed zip file of the Shopware `/custom/plugins` folder.
+- **Backup:** Creates a compressed zip file of the Shopware `<your-site-root>/custom/plugins` folder.
 - **Download:** Provides a download link for the generated backup.
 
 ## Installation
@@ -20,7 +20,7 @@ The `slox_plugin_backup` is a Shopware 6 plugin designed to simplify the backup 
 ## Usage
 
 1. After activation, navigate to `<your-site-domin>/slox-backup` in your browser.
-2. The plugin will generate a backup of the `/custom/plugins` folder and provide a download link.s
+2. The plugin will generate a backup of the `<your-site-root>/custom/plugins` folder and provide a download link.s
 
 ## Requirements
 
